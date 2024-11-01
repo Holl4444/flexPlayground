@@ -24,6 +24,9 @@
   max-height: 8vw;
 }
 
+/* TODO:
+Change order of items with @media when .header reaches 
+a large size so that title shows */
 .header {
   margin: auto;
   display: flex;
@@ -165,4 +168,10 @@ p {
   min-width: none;
   max-height: 35vh;
   max-width: 30vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .header2 {
+    order: -1;
+  }
 }
