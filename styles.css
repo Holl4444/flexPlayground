@@ -12,11 +12,9 @@
 
 .banner {
   display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 20px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 2rem;
 }
 
 .bannerImg {
@@ -51,7 +49,6 @@ h2 {
   text-align: left;
   font-weight: 900;
   font-size: 2em;
-  box-sizing: content-box;
   margin: 100px 0;
   border-bottom: 2px dotted blanchedalmond;
 }
@@ -62,17 +59,23 @@ h2 {
 .header4 {
   padding: 5px;
   align-content: center;
+  /* Turn off flex auto, sharing space equally and 
+  allowing shrink and grow to fit container. 
+  Same as writing flex: 1; */
   flex: 1 1 0;
   display: flex;
 }
 
 .header2,
 .header3 {
+  /* Set these items to take twice as much 
+  of the available container space*/
   flex: 2 2 0;
 }
 
 .container.header img,
 .container.header h1 {
+  /* Allow the images to stretch to fill containers */
   flex: 1 1 0;
   align-content: center;
 }
@@ -86,6 +89,7 @@ h2 {
   row-gap: 50px;
   column-gap: 25px;
   margin-bottom: 75px;
+  /* add an invisible scroll bar for overflow */
   overflow-y: auto;
   scrollbar-width: none;
 }
@@ -140,6 +144,7 @@ h2 {
   transform: rotate(-90deg);
 }
 
+/* Next two relative to parent following rotate */
 p.organP {
   position: relative;
   left: -27%;
@@ -178,6 +183,7 @@ p {
   max-width: 30vw;
 }
 
+/* Changes the order of items in header for smaller screen/extreme zoom */
 @media only screen and (max-width: 600px) {
   .header2 {
     order: -1;
