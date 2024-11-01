@@ -4,7 +4,7 @@
   background-color: darkgoldenrod;
 }
 .content {
-  margin: 10vw;
+  margin: 5vh 10vw;
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: darkgoldenrod;
@@ -31,8 +31,9 @@ a large size so that title shows */
   margin: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-content: center;
   margin-bottom: 100px;
   box-shadow: 0px 0px 10px 3px blanchedalmond;
   flex-basis: auto;
@@ -59,14 +60,16 @@ h2 {
 .header2,
 .header3,
 .header4 {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 5px;
   align-content: center;
+  flex: 1 1 0;
+  display: flex;
 }
 
-.header2,
-.header3 {
-  flex: 2;
+.container.header img,
+.container.header h1 {
+  flex: 1 1 0;
+  align-content: center;
 }
 
 .blockA {
