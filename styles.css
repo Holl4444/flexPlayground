@@ -2,11 +2,23 @@
   margin: 0;
   padding: 0;
   background-color: darkgoldenrod;
-}
-.content {
-  margin: 5vh 10vw;
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.contentContainer {
+  /* having content as a flex container allows us to push footer down 
+  on pages with less content by using flex: 1 to have content take 
+  up available space. */
+  display: flex;
+  flex-direction: column;
+  margin: 5vh 10vw;
+  /* Added to show footer being pushed down */
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 1 auto;
 }
 
 .banner {

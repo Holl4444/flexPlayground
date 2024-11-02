@@ -7,33 +7,36 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="content">
-      <h1>Flex Grow and Shrink</h1>
-      <p>
-        Made while following along with
-        <a href="https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/"
-          >interactive guide to flexbox</a
-        >. Learning more about how flexbox works, especially flex-basis,
-        flex-grow and flex-shrink.
-      </p>
-      <h2 id="subTitleFlex2">A form that gives four layouts</h2>
-      <p>
-        Depending on the size of the page, the form wraps. The space given to
-        email increases more than the other two elements as email addresses are
-        usually longer. Set this up with flex: 2;
-      </p>
-      <div class="formContainer">
-        <form action="details">
-          <div>
-            <label for="detailsName">Name:</label>
-            <input type="text" id="detailsName" />
-          </div>
-          <div>
-            <label for="detailsEmail">Email:</label>
-            <input type="text" id="detailsEmail" />
-          </div>
-          <button type="submit">Submit</button>
-        </form>
+    <div class="contentContainer">
+      <div class="content">
+        <h1>Flex Grow and Shrink</h1>
+        <p>
+          Made while following along with
+          <a
+            href="https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/"
+            >interactive guide to flexbox</a
+          >. Learning more about how flexbox works, especially flex-basis,
+          flex-grow and flex-shrink.
+        </p>
+        <h2 id="subTitleFlex2">A form that gives four layouts</h2>
+        <p>
+          Depending on the size of the page, the form wraps. The space given to
+          email increases more than the other two elements as email addresses
+          are usually longer. Set this up with flex: 2;
+        </p>
+        <div class="formContainer">
+          <form action="details">
+            <div>
+              <label for="detailsName">Name:</label>
+              <input type="text" id="detailsName" />
+            </div>
+            <div>
+              <label for="detailsEmail">Email:</label>
+              <input type="text" id="detailsEmail" />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
       <footer>
         <p>Using margin auto to assign empty space.</p>
