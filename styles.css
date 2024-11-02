@@ -179,7 +179,7 @@ h2 {
   margin-left: 50px;
   justify-content: center;
   position: relative;
-  left: 30%;
+  left: 10%;
 }
 
 .rotateBack {
@@ -289,10 +289,16 @@ footer {
 .nav {
   border: 2px dotted blanchedalmond;
   padding: 5px 10px;
+  margin-top: 2vh;
+}
+
+.nav.page1 {
+  margin-top: 10vh;
 }
 
 ul {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   border: 1px solid pink;
   column-gap: 15px;
@@ -309,6 +315,10 @@ li {
 /* Forces all extra space between this object and the next */
 .marginRight {
   margin-right: auto;
+}
+
+.page1 > ul > li {
+  flex: 1;
 }
 
 a:link {
