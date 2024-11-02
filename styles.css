@@ -7,19 +7,54 @@
   margin: 5vh 10vw;
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: darkgoldenrod;
 }
 
 .banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5rem;
+  margin-left: -10vw;
+  margin-right: -10vw;
+  width: 100vw;
+  height: 10vh;
 }
 
 .bannerImg {
-  min-width: 100vw;
-  max-height: 8vw;
+  display: block;
+  width: 100vw;
+  height: 10vh;
+}
+
+.bannerText {
+  color: rgb(63, 55, 33);
+  background-color: #f7d06e;
+  border: 1px solid #f7d06e;
+  border-radius: 4px;
+  box-shadow: 0 0 3px 5px #f7d06e;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.bannerTextBox {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  position: absolute;
+  top: 35%;
+  /* Stop the text overflowing */
+  font-size: max(2vh);
+}
+
+.bannerTextBox.box1 {
+  left: 5%;
+}
+
+.bannerTextBox.box2 {
+  left: 35%;
+}
+
+.bannerTextBox.box3 {
+  left: 65%;
 }
 
 /* TODO:
@@ -32,7 +67,7 @@ a large size so that title shows */
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 1vh;
   box-shadow: 0px 0px 10px 3px blanchedalmond;
   flex-basis: auto;
   overflow: hidden;
@@ -42,15 +77,21 @@ h1 {
   color: blanchedalmond;
   text-align: center;
   font-weight: 900;
+  margin-bottom: 30px;
 }
 
 h2 {
   color: rgb(63, 55, 33);
   text-align: left;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 100px 0;
   border-bottom: 2px dotted blanchedalmond;
+}
+
+#subTitleFlex2 {
+  margin-bottom: 4vh;
+  margin-top: 6vh;
 }
 
 .header1,
@@ -169,7 +210,7 @@ p.organP {
 p {
   color: blanchedalmond;
   margin-bottom: 25px;
-  font-size: 1.3rem;
+  font-size: 1.1em;
 }
 
 .sixtiesP {
@@ -188,4 +229,99 @@ p {
   .header2 {
     order: -1;
   }
+}
+
+.formContainer {
+  border: 2px double rgb(177, 82, 98);
+  padding: 10px;
+  margin: 5vw;
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.detailsName {
+  flex-grow: 1;
+  flex-basis: 120px;
+}
+
+.detailsEmail {
+  flex-grow: 3;
+  flex-basis: 170px;
+}
+
+button {
+  flex-grow: 1;
+  flex-basis: 70px;
+  height: 2.25rem;
+  background-color: blanchedalmond;
+  border: none;
+  color: rgb(177, 82, 98);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+label {
+  font-weight: 500;
+  color: rgb(63, 55, 33);
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  height: 2rem;
+  border: 1px dashed pink;
+  box-shadow: inset 0px 0px 5px 1px pink;
+  color: rgb(63, 55, 33);
+}
+
+footer {
+  margin-top: 10vh;
+}
+
+.nav {
+  border: 2px dotted blanchedalmond;
+  padding: 5px 10px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid pink;
+  column-gap: 15px;
+}
+
+li {
+  text-align: center;
+  list-style: none;
+  flex-basis: 100px;
+  color: rgb(177, 82, 98);
+  font-weight: 700;
+}
+
+/* Forces all extra space between this object and the next */
+.marginRight {
+  margin-right: auto;
+}
+
+a:link {
+  color: rgb(63, 55, 33);
+}
+
+a:hover {
+  color: goldenrod;
+}
+
+a:visited {
+  color: rgb(120, 88, 7);
+}
+
+a:active {
+  color: blanchedalmond;
 }
